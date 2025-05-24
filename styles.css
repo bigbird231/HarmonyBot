@@ -221,7 +221,7 @@ nav ul li a.active {
 
 .carousel-item img {
     width: 100%;
-    height: 600px;
+    height: 700px;
     object-fit: cover;
 }
 
@@ -474,7 +474,7 @@ nav ul li a.active {
 
 .company-info h2 {
     color: var(--primary-color);
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 /* Team Section Styles */
@@ -491,25 +491,51 @@ nav ul li a.active {
 
 .team-grid {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 2rem;
-    justify-content: center;
+    overflow-x: auto;
+    padding-bottom: 1rem;
+    scroll-behavior: smooth;
+}
+
+.team-grid::-webkit-scrollbar {
+  height: 8px;
+}
+
+.team-grid::-webkit-scrollbar-track {
+  background: var(--light-background);
+  border-radius: 4px;
+}
+
+.team-grid::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 4px;
+}
+
+.team-grid::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary-color);
 }
 
 .team-member {
     flex: 1;
     min-width: 300px;
     max-width: 400px;
+    height: 450px;
     background-color: white;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: var(--shadow);
 }
 
+.member-image {
+    text-align: center
+}
+
 .member-image img {
-    width: 100%;
-    height: auto;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
+    background-size: 100% 100%;
 }
 
 .member-info {
@@ -588,3 +614,189 @@ footer {
         font-size: 1.2rem;
     }
 }
+
+/* Robot Track Page Styles */
+.track-section {
+  padding: 4rem 0;
+  background-color: var(--light-background);
+}
+
+.track-form-container {
+  max-width: 500px;
+  margin: 0 auto 3rem auto;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.track-form h2 {
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.track-form p {
+  text-align: center;
+  color: var(--light-text);
+  margin-bottom: 2rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: var(--transition);
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(78, 84, 200, 0.1);
+}
+
+.search-btn {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 1rem;
+}
+
+.btn-loading {
+  display: none;
+}
+
+.chat-history {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.chat-history h3 {
+  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+  color: white;
+  padding: 1rem 2rem;
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+.chat-info {
+  padding: 1rem 2rem;
+  background-color: var(--light-background);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.chat-info p {
+  margin: 0.3rem 0;
+  font-size: 0.9rem;
+}
+
+.chat-messages {
+  padding: 1rem 2rem 2rem 2rem;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.message {
+  margin-bottom: 1rem;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  max-width: 80%;
+}
+
+.message.user {
+  background-color: var(--primary-color);
+  color: white;
+  margin-left: auto;
+  text-align: right;
+}
+
+.message.robot {
+  background-color: var(--light-background);
+  color: var(--text-color);
+  margin-right: auto;
+}
+
+.message-time {
+  font-size: 0.8rem;
+  opacity: 0.7;
+  margin-top: 0.3rem;
+}
+
+.message.user .message-time {
+  text-align: right;
+}
+
+.message.robot .message-time {
+  text-align: left;
+}
+
+.error-message {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #fee;
+  border: 1px solid #fcc;
+  border-radius: 4px;
+  color: #c33;
+  text-align: center;
+}
+
+/* Mobile responsiveness for Robot Track */
+@media (max-width: 768px) {
+  .track-form-container {
+    margin: 0 1rem 2rem 1rem;
+    padding: 1.5rem;
+  }
+
+  .chat-history {
+    margin: 0 1rem;
+  }
+
+  .chat-info {
+    padding: 1rem;
+  }
+
+  .chat-messages {
+    padding: 1rem;
+  }
+
+  .message {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .track-form-container {
+    margin: 0 0.5rem 1.5rem 0.5rem;
+    padding: 1rem;
+  }
+
+  .chat-history h3 {
+    padding: 0.8rem 1rem;
+    font-size: 1.1rem;
+  }
+
+  .message {
+    max-width: 95%;
+    padding: 0.6rem 0.8rem;
+  }
+}
+

@@ -1,3 +1,5 @@
+// https://bigbird231.github.io/HarmonyBot/harmony.html
+
 // Carousel functionality
 let currentSlide = 0;
 const slides = document.querySelectorAll('.carousel-item');

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Robots - HarmonyBot</title>
+    <link rel="icon" href="imgs/logo.png" type="image/png">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
 </head>
@@ -16,8 +17,9 @@
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="harmony.html">Harmony</a></li>
+                    <!-- <li><a href="harmony.html">Harmony</a></li> -->
                     <li><a href="robots.html" class="active">Robots</a></li>
+                    <li><a href="robot-track.html">Chat History</a></li>
                     <li><a href="about.html">About Us</a></li>
                 </ul>
             </nav>
@@ -27,7 +29,7 @@
     <section class="page-banner">
         <div class="container">
             <h1>Our Robots</h1>
-            <p>Innovative technology for harmonious relationships</p>
+            <p>Smart AI for building harmony between parents and children</p>
         </div>
     </section>
 
@@ -35,19 +37,51 @@
         <div class="container">
             <div class="product-card">
                 <div class="product-image">
-                    <img src="imgs/harmony v7.png" alt="HarmonyBot Model H1">
+                    <img src="imgs/timi.png" alt="HarmonyBot Model H1">
                 </div>
                 <div class="product-details">
-                    <h2>HarmonyBot Model H1</h2>
+                    <h2>Timi</h2>
+                    <p class="product-tagline">Your child’s new best friend</p>
+                    <div class="product-specs">
+                        <h3>Technical Specifications</h3>
+                        <ul>
+                            <li><strong>Dimensions:</strong> 16cm length, 2cm width, 13cm height</li>
+                            <li><strong>Weight:</strong> 200g</li>
+                            <li><strong>Material:</strong> High-quality recyclable plastic</li>
+                            <li><strong>Connectivity:</strong> Wi-Fi</li>
+                            <li><strong>Battery Life:</strong> 3 hours active use</li>
+                        </ul>
+                    </div>
+                    <div class="product-features">
+                        <h3>Key Features</h3>
+                        <ul>
+                            <li><strong>Friendly AI Chat for Children:</strong> Timi chats with kids in a safe, friendly, and age-appropriate way</li>
+                            <li><strong>Emotional Support & Behavior Understanding:</strong> Timi detects moods and responds with care using child psychology and AI understanding.</li>
+                            <li><strong>Parent Insights and Chat History:</strong> Parents can view chats and receive helpful tips to better support their child’s growth.</li>
+                        </ul>
+                    </div>
+                    <div class="product-cta">
+                        <button id="order-timi" class="btn-primary">Pre-order Now</button>
+                        <button id="timi-learnmore" class="btn-secondary">Learn More</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="imgs/harmony.png" alt="HarmonyBot Model H1">
+                </div>
+                <div class="product-details">
+                    <h2>Harmony</h2>
                     <p class="product-tagline">Your personal relationship assistant</p>
                     <div class="product-specs">
                         <h3>Technical Specifications</h3>
                         <ul>
-                            <li><strong>Dimensions:</strong> 25cm height, 15cm diameter</li>
-                            <li><strong>Weight:</strong> 1.2kg</li>
+                            <li><strong>Dimensions:</strong> 20cm length, 10cm width, 22cm height</li>
+                            <li><strong>Weight:</strong> 600g</li>
                             <li><strong>Material:</strong> High-quality recyclable plastic</li>
-                            <li><strong>Connectivity:</strong> Wi-Fi 6, Bluetooth 5.2</li>
-                            <li><strong>Battery Life:</strong> 12 hours active use, 7 days standby</li>
+                            <li><strong>Connectivity:</strong> Wi-Fi</li>
+                            <li><strong>Battery Life:</strong> 3 hours active use</li>
                         </ul>
                     </div>
                     <div class="product-features">
@@ -58,18 +92,9 @@
                             <li><strong>Personalized Learning:</strong> Adapts to your specific relationship dynamics over time</li>
                         </ul>
                     </div>
-                    <!-- <div class="product-use-cases">
-                        <h3>Ideal For</h3>
-                        <ul>
-                            <li>Couples seeking to improve communication</li>
-                            <li>Families navigating challenging dynamics</li>
-                            <li>Workplaces promoting team harmony</li>
-                            <li>Individuals wanting to develop better relationship skills</li>
-                        </ul>
-                    </div> -->
                     <div class="product-cta">
-                        <button class="btn-primary">Pre-order Now</button>
-                        <button class="btn-secondary">Learn More</button>
+                        <button id="order-harmony" class="btn-primary">Pre-order Now</button>
+                        <button id="harmony-learnmore" class="btn-secondary">Learn More</button>
                     </div>
                 </div>
             </div>
@@ -86,5 +111,7 @@
             <p>&copy; 2025 HarmonyBot. All rights reserved.</p>
         </div>
     </footer>
+
+    <script src="robots.js"></script>
 </body>
 </html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robot Track - HarmonyBot</title>
+    <link rel="icon" href="imgs/logo.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>HarmonyBot</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <!-- <li><a href="harmony.html">Harmony</a></li> -->
+                    <li><a href="robots.html">Robots</a></li>
+                    <li><a href="robot-track.html" class="active">Chat History</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-banner">
+        <div class="container">
+            <h1>Robot Track</h1>
+            <p>View your conversation history with HarmonyBot</p>
+        </div>
+    </section>
+
+    <section class="track-section">
+        <div class="container">
+            <div class="track-form-container">
+                <form id="trackForm" class="track-form">
+                    <h2>Access Your Chat History</h2>
+                    <p>Enter your credentials to view your conversation history with your HarmonyBot.</p>
+                    
+                    <div class="form-group">
+                        <label for="userId">User ID</label>
+                        <input type="text" id="userId" name="userId" placeholder="Enter your User ID" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="robotId">Robot ID</label>
+                        <input type="text" id="robotId" name="robotId" placeholder="Enter your Robot ID" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                    </div>
+                    
+                    <button type="submit" class="btn-primary search-btn">
+                        <span class="btn-text">Search Chat History</span>
+                        <span class="btn-loading" style="display: none;">Searching...</span>
+                    </button>
+                </form>
+            </div>
+            
+            <div id="chatHistory" class="chat-history" style="display: none;">
+                <h3>Chat History</h3>
+                <div class="chat-info">
+                    <p><strong>User:</strong> <span id="displayUserId"></span></p>
+                    <p><strong>Robot:</strong> <span id="displayRobotId"></span></p>
+                    <p><strong>Last Updated:</strong> <span id="lastUpdated"></span></p>
+                </div>
+                <div class="chat-messages" id="chatMessages">
+                    <!-- Chat messages will be displayed here -->
+                </div>
+            </div>
+            
+            <div id="errorMessage" class="error-message" style="display: none;">
+                <p>Invalid credentials. Please check your User ID, Robot ID, and password.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 HarmonyBot. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="robot-track.js"></script>
+</body>
+</html>
