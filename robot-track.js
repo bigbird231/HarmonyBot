@@ -7,79 +7,79 @@ const mockDatabase = {
         {
           type: "user",
           message: "Hello.",
-          timestamp: "2025-05-25 15:15:00",
+          timestamp: "2025-05-24 15:15:00",
         },
         {
           type: "robot",
           message:
             "Hi! How are you today? Is there anything you want to talk about or any questions you have for me? I'm here to have fun and chat with you!",
-          timestamp: "2025-05-25 15:15:20",
+          timestamp: "2025-05-24 15:15:20",
         },
         {
           type: "user",
           message: "What do you like?",
-          timestamp: "2025-05-25 15:16:00",
+          timestamp: "2025-05-24 15:16:00",
         },
         {
           type: "robot",
           message:
             "Well, I like many things! I like talking to you, for example. I also like learning new things and exploring different topics. Do you have any hobbies or things you really enjoy doing? Maybe we can talk about those!",
-          timestamp: "2025-05-25 15:16:30",
+          timestamp: "2025-05-24 15:16:30",
         },
         {
           type: "user",
           message: "How many planets are there in the solar system?",
-          timestamp: "2025-05-25 15:17:00",
+          timestamp: "2025-05-24 15:17:00",
         },
         {
           type: "robot",
           message:
             "There are eight planets in the solar system. They are Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune. Each planet is unique and has its own characteristics. Have you ever wondered what it would be like to visit another planet?",
-          timestamp: "2025-05-25 15:17:20",
+          timestamp: "2025-05-24 15:17:20",
         },
         {
           type: "user",
           message: "Yes.",
-          timestamp: "2025-05-25 15:18:40",
+          timestamp: "2025-05-24 15:18:40",
         },
         {
           type: "robot",
           message:
             "That's really cool! Exploring other planets would be an amazing adventure. Scientists are constantly learning more about our solar system and the planets within it. Maybe one day, humans will be able to travel to other planets and explore them up close. What planet would you most like to visit?",
-          timestamp: "2025-05-25 15:19:10",
+          timestamp: "2025-05-24 15:19:10",
         },
         {
           type: "user",
           message: "Super as in the planet's made out of gas.",
-          timestamp: "2025-05-25 15:20:20",
+          timestamp: "2025-05-24 15:20:20",
         },
         {
           type: "robot",
           message:
             "Oh, you might be talking about Jupiter! It's the largest planet in our solar system and is made mostly of gas. It's so big that over 1,000 Earths could fit inside it. Jupiter has some really cool features, like the Great Red Spot, which is a huge storm that's been raging for hundreds of years. Do you want to know more about Jupiter or any of the other planets?",
-          timestamp: "2025-05-25 15:20:50",
+          timestamp: "2025-05-24 15:20:50",
         },
         {
           type: "user",
           message: "Yes.",
-          timestamp: "2025-05-25 15:21:30",
+          timestamp: "2025-05-24 15:21:30",
         },
         {
           type: "robot",
           message:
             "Well, let's talk about Saturn. It's famous for its beautiful rings. These rings are made up of ice and dust particles. Saturn is also a gas giant, like Jupiter. It has many moons, and one of them, Titan, is really interesting because it has a thick atmosphere and lakes of liquid methane. Isn't it amazing how diverse our solar system is?",
-          timestamp: "2025-05-25 15:22:20",
+          timestamp: "2025-05-24 15:22:20",
         },
         {
           type: "user",
           message: "How many stars are in the spice?",
-          timestamp: "2025-05-25 15:24:00",
+          timestamp: "2025-05-24 15:24:00",
         },
         {
           type: "robot",
           message:
             "Oh, that's a great question!But it's a really hard one to answer because there are so many stars in the universe. Scientists estimate that there are at least 100 billion galaxies in the observable universe, and each galaxy contains billions or even trillions of stars. So, the number of stars in the universe is truly mind-boggling.But even though we can't count them all, we can still enjoy looking up at the night sky and imagining all the amazing things that are out there. Do you like looking at the stars?",
-          timestamp: "2025-05-25 15:24:30",
+          timestamp: "2025-05-24 15:24:30",
         },
       ],
     },
@@ -129,7 +129,7 @@ function displayChatHistory(userId, robotId, chatHistory) {
   // Update display info
   document.getElementById("displayUserId").textContent = userId
   document.getElementById("displayRobotId").textContent = robotId
-  document.getElementById("lastUpdated").textContent = new Date().toLocaleString()
+  document.getElementById("lastUpdated").textContent = 'May 24, 2025, 03:24 PM'
 
   // Clear previous messages
   const chatMessages = document.getElementById("chatMessages")
