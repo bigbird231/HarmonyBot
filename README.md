@@ -1,4 +1,5 @@
 # HarmonyBot
+`` Double Click 'index.html' to overview the main website.``
 
 **HarmonyBot** is a family support AI system featuring intelligent robots designed to enhance communication, emotional well-being, and education at home. Our product line includes **Timi**, an AI-powered childcare companion, and **Harmony**, a robot designed to help resolve relationship issues between adults. This repository includes the frontend website, backend APIs, and integration logic with AI models and hardware.
 
